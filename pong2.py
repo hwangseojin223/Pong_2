@@ -39,6 +39,8 @@ class Pong:
     def update_ball_pos(self):
         # update ball.pos following dx, dy
         # ...
+        self.ball.pos[0] += self.ball.dx#add
+        self.ball.pos[1] += self.ball.dy#add
         writer.clear(); writer.write("ball_pos"+str(self.ball.pos))
 
     def check_ball_pos(self):
