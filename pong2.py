@@ -71,6 +71,8 @@ class Pong:
         # ball falls, if ball goes beyond 350 (or -350) along x-axis
         # if a fall is detected, return True
         # ...
+        if abs(self.ball.pos[o]) >= 350:
+            return True
         return False
 
     # MEMBER 3
